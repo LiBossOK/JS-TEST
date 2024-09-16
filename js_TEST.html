@@ -1,0 +1,12 @@
+<script>
+function a (){
+console.log(1);
+Promise.resolve().then(function(){
+console.log(2);
+});
+}
+setTimeout(function(){
+a();
+});
+console.log(3);
+</script>
